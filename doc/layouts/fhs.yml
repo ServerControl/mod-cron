@@ -1,0 +1,30 @@
+Directories:
+   Base:
+      bin:
+         name: bin
+         chmod: 755
+         user: root
+         group: root
+   Configuration:
+      conf:
+         name: etc
+         chmod: 755
+         user: root
+         group: root
+   Runtime:
+      log:
+         name: var/log
+         chmod: 755
+         user: <%= ServerControl::Args->get->{'user'} %>
+         group: root
+
+Files:
+   Exec:
+      job:
+         name: bin/cron-<%= __PACKAGE__->get_name %>
+         link: <%= ServerControl::Args->get()->{"command"} %>
+   Configuration:
+      cronfile:
+         name: etc/<%= __PACKAGE__->get_name %>.cron
+         call: <% sub { } %>
+

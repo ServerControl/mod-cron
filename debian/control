@@ -1,0 +1,12 @@
+Source: servercontrol-mod-cron
+Section: admin
+Priority: optional
+Maintainer: Jan Gehring <jan.gehring@gmail.com>
+Build-Depends: debhelper (>= 4), perl (>= 5.10.0), servercontrol (>= 0.93)
+Standards-Version: 3.5.1
+Homepage: https://github.com/servercontrol
+
+Package: servercontrol-mod-cron
+Architecture: all
+Depends: perl (>= 5.10.0), servercontrol (>= 0.93)
+Description: ServerControl Cron Module
