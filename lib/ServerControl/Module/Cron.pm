@@ -70,7 +70,7 @@ sub create {
    print $fh "$min $hour $day $month $weekday $user $cmd\n";
    close($fh);
 
-   symlink("$path/$job_file", "/etc/cron.d/$name.cron");
+   symlink("$path/$job_file", "/etc/cron.d/$name");
 }
 
 
