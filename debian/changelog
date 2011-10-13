@@ -1,3 +1,9 @@
+servercontrol-mod-cron (0.101) unstable; urgency=low
+
+  * Fix: Remove .cron from cronjobs files.
+
+ -- Daniel Bäurer <daniel.baeurer@web.de>  Thu, 13 Oct 2011 11:00:00 +0200
+
 servercontrol-mod-cron (0.93) unstable; urgency=low
   * inital module
 
