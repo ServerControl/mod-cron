@@ -1,3 +1,9 @@
+servercontrol-mod-cron (0.102) unstable; urgency=low
+
+  * Wrong build package
+
+ -- Daniel Bäurer <daniel.baeurer@web.de>  Wed, 18 October 2011 12:52:00 +0200
+
 servercontrol-mod-cron (0.101) unstable; urgency=low
 
   * Fix: Remove .cron from cronjobs files.
